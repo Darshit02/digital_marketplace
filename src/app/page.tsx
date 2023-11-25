@@ -44,7 +44,6 @@ export default function Home() {
 
         {/* TODO : List Products */}
       </MaxWidthWrapper>
-
       <section className="broder-t border-gray-200 bg-gray-50">
         <MaxWidthWrapper className="py-20">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
@@ -61,7 +60,7 @@ export default function Home() {
                       <h3 className="text-base font-medium text-gray-900">
                         {perk.name}
                       </h3>
-                      <p className="mt-3 text-sm text-muted-foreground ">
+                      <p className="mt-3 text-sm text-muted-foreground">
                         {perk.description}
                       </p>
                     </div>
