@@ -15,7 +15,7 @@ export default buildConfig({
     routes :{
         admin : '/sell'
     },
-    admin : {
+    admin : { 
         bundler : webpackBundler(),
         meta : {
             titleSuffix :"- DigitalHippo",
