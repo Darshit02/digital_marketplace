@@ -3,7 +3,6 @@ import { publicProcedure, router } from "./trpc";
 import { getPayloadClient } from "../get-payload";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
-import payload from "payload";
 
 export const authRouter = router({
   createPayloadUser: publicProcedure

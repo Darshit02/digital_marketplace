@@ -12,6 +12,7 @@ import {
 import Link from 'next/link'
 import { useAuth } from '@/hooks/use-auth'
 
+
 const UserAccountNav = ({ user }: { user: User }) => {
   const { signOut } = useAuth()
 
@@ -24,7 +25,7 @@ const UserAccountNav = ({ user }: { user: User }) => {
           variant='ghost'
           size='sm'
           className='relative'>
-          My account
+          My Account
         </Button>
       </DropdownMenuTrigger>
 
