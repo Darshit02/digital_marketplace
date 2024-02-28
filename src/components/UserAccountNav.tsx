@@ -11,6 +11,7 @@ import {
 } from './ui/dropdown-menu'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/use-auth'
+import { KanbanSquare, Power } from 'lucide-react'
 
 
 const UserAccountNav = ({ user }: { user: User }) => {
@@ -43,12 +44,16 @@ const UserAccountNav = ({ user }: { user: User }) => {
         <DropdownMenuSeparator />
 
         <DropdownMenuItem asChild>
-          <Link href='/sell'>Seller Dashboard</Link>
+          <Link href='/sell'>
+          <KanbanSquare className='text-gray-500 mr-2' height={15} width={15}/>
+            Seller Dashboard
+            </Link>
         </DropdownMenuItem>
 
         <DropdownMenuItem
           onClick={signOut}
           className='cursor-pointer'>
+            <Power className='text-gray-500 mr-2' height={15} width={15}/>
           Log out
         </DropdownMenuItem>
       </DropdownMenuContent>
