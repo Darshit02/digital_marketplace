@@ -3,7 +3,7 @@ import { Product } from "@/payload-types";
 import { useEffect, useState } from "react";
 import { Skeleton } from "./ui/skeleton";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { cn, formatePrice } from "@/lib/utils";
 import { PRODUCTS_CATEGORIES } from "@/config";
 import ImageSlider from "./imageSlider";
 
@@ -46,7 +46,7 @@ const validUrls = product.images.map(({image}) => typeof image === "string" ? im
                 {label}
             </p>
           <p className="mt-1 text-sm text-gray-900">
-          ₹{product.price}
+          {formatePrice(product.price)}
           </p>
         </div>
       </Link>
