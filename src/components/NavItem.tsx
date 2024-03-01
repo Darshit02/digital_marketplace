@@ -23,7 +23,7 @@ const NavItem = ({isAnyOpen , category , handleOpen ,isOpen} : NavItemProps) => 
             className="gap-1.5" 
             onClick={handleOpen} 
             variant={isOpen ? "secondary": "ghost"}>
-            {category.lable}
+            {category.label}
             <ChevronDown className={cn("h-4 w-4 transation-all text-muted-foreground", 
                 {
                     '-rotate-180' : isOpen
